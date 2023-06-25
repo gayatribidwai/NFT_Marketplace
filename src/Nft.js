@@ -2,28 +2,12 @@ import React, { useState } from 'react';
 import { nftsData } from './nftsData';
 import Cart from './Cart';
 
-export default function Buy_Nft() {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (item) => {
-    setCartItems((prevItems) => [...prevItems, item]);
-  };
-
+export default function Nft() {
+  
   return (
     <>
-      <div className="card">
-        {nftsData.map((nft) => (
-          <div key={nft.id}>
-            <img src={nft.imageUrl} alt={nft.name} style={{ maxWidth: '200px' }} />
-            <h3>{nft.name}</h3>
-            <p>Price: ${nft.price}</p>
-            <button onClick={() => addToCart(nft)}>Add to Cart</button>
-          </div>
-        ))}
-      </div>
-      <button type="button" class="btn btn-primary btn-lg">My Cart</button>
-      <Cart cartItems={cartItems} />
-      <button type="button" class="btn btn-primary btn-lg">Pay</button>
+      
+      
     </>
   );
 }

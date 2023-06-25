@@ -5,8 +5,9 @@ img1 {
 
  .container{
     margin-top: 20px;
-    width: 800px;
+    width: 900px;
     height: 100px;
+    margin-right: 10px;
  }
 
  .btn{
@@ -16,3 +17,39 @@ img1 {
     justify-items: center;
     display: flex;
  }
+
+
+
+
+
+
+
+
+.buy-panel-wrapper {
+  overflow-x: auto;
+}
+
+.buy-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nft-item {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nft-image {
+  max-width: 200px;
+}
+
+.nft-name {
+  font-weight: bold;
+}
+
+.nft-price {
+  margin-bottom: 10px;
+}
